@@ -21,18 +21,54 @@ public class MainActivity extends AppCompatActivity
     protected void startup()
     {
         client = new udpSender();
-        Button panicButton = (Button) findViewById(R.id.panicButton);
+        Button aButton = (Button) findViewById(R.id.buttonA);
+        Button bButton = (Button) findViewById(R.id.buttonB);
+        Button cButton = (Button) findViewById(R.id.buttonC);
+        Button dButton = (Button) findViewById(R.id.buttonD);
         final EditText ipAddress = (EditText) findViewById(R.id.ipAddress);
-        panicButton.setOnClickListener(new View.OnClickListener() {
+        aButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
             {
-                client.sendMessage("tacos!", ipAddress.getText().toString());
+                client.sendMessage("A", ipAddress.getText().toString());
                 Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
                 toast.show();
             }
         });
-        panicButton.setEnabled(true);
+        aButton.setEnabled(true);
+
+        bButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                client.sendMessage("B", ipAddress.getText().toString());
+                Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        bButton.setEnabled(true);
+
+        cButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                client.sendMessage("C", ipAddress.getText().toString());
+                Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        cButton.setEnabled(true);
+
+        dButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                client.sendMessage("D", ipAddress.getText().toString());
+                Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
+        dButton.setEnabled(true);
 
         Button exitButton = (Button) findViewById(R.id.exitButton);
         exitButton.setOnClickListener(new View.OnClickListener()

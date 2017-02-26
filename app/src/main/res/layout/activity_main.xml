@@ -11,13 +11,21 @@
     tools:context="com.thecoldheartofspace.karl.udpbuttons.MainActivity">
 
     <Button
-        android:text="Panic"
+        android:text="D"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/panicButton"
+        android:id="@+id/buttonD"
+        android:layout_below="@+id/buttonC"
+        android:layout_alignStart="@+id/buttonC" />
+
+    <Button
+        android:text="C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonC"
+        android:layout_marginTop="31dp"
+        android:layout_marginStart="52dp"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/exitButton"
         android:layout_alignStart="@+id/exitButton" />
 
     <Button
@@ -25,21 +33,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/exitButton"
-        android:layout_marginTop="32dp"
-        android:layout_below="@+id/panicButton"
+        android:layout_marginTop="66dp"
+        android:layout_below="@+id/ipAddress"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="192.168.86.79"
+        android:text="192.168.42.217"
         android:ems="10"
         android:id="@+id/ipAddress"
-        android:layout_marginTop="17dp"
         android:layout_marginRight="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_below="@+id/exitButton"
-        android:layout_alignParentRight="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/buttonD"
         android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonA"
+        android:layout_alignBaseline="@+id/buttonD"
+        android:layout_alignBottom="@+id/buttonD"
+        android:layout_alignStart="@+id/buttonB" />
+
+    <Button
+        android:text="B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonB"
+        android:layout_marginEnd="27dp"
+        android:layout_alignBaseline="@+id/buttonC"
+        android:layout_alignBottom="@+id/buttonC"
+        android:layout_toStartOf="@+id/buttonD" />
 </RelativeLayout>
