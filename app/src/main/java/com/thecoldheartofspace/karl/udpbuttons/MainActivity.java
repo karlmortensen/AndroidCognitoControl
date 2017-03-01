@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                client.sendMessage("A", ipAddress.getText().toString());
+                client.sendMessage("A2", ipAddress.getText().toString());
                 Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
                 toast.show();
             }
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                client.sendMessage("B", ipAddress.getText().toString());
+                client.sendMessage("B2", ipAddress.getText().toString());
                 Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
                 toast.show();
             }
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                client.sendMessage("C", ipAddress.getText().toString());
+                client.sendMessage("C2", ipAddress.getText().toString());
                 Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
                 toast.show();
             }
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                client.sendMessage("D", ipAddress.getText().toString());
+                client.sendMessage("D2", ipAddress.getText().toString());
                 Toast toast = Toast.makeText(getApplicationContext(), "Message sent.", Toast.LENGTH_SHORT);
                 toast.show();
             }
